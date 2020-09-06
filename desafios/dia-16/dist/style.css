@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #222;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.btn{
+  background: transparent;
+  border: none;
+  border-radius: 80px;
+  width: 520px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 3px rgba(46, 182, 249, 1);
+}
+
+.btn:after{
+  align-items: center;
+  content: "Enviar ↗️";
+  background-color: #222;
+  border-radius: 80px;
+  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, .8);
+  color: #eee;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all .3s ease-in-out;
+  animation: style .3s linear;
+  z-index: -1;
+}
+
+.btn:before{
+    align-items: center;
+  content: "Enviado ✅";
+  background-color: #2EB6F9;
+  color: #111;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all .3s ease-in-out;
+  z-index: -1;
+}
+
+.btn:focus::after{
+  top: 100%;
+  border-radius: 50%;
+}

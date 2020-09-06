@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1{
+  color: #a5c310;
+  font-size: 104px;
+  font-family: 'Fredoka One', cursive;   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+h1::before{
+  color: #F35787;
+  content: "Watermelon";
+  font-size: 104px; 
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
+  position: absolute;
+  overflow:hidden;
+  width: 0%;
+  transition: all 1s;
+}
+
+h1:hover::before{
+  width: 100%;
+}

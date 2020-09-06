@@ -1,0 +1,54 @@
+body {
+  background-color: #564D65;
+  height: 100vh;
+}
+
+#menu {
+  visibility: hidden;
+}
+
+label,
+label::before,
+label::after {
+  position: absolute;
+  width: 100px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all .6s;
+  -webkit-transition: 0.6s;
+}
+
+label {
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -7.5px;
+}
+
+label::before {
+  content: "";
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+}
+
+label::after {
+  content: "";
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+}
+
+#menu:checked + label {
+  width: 0px;
+}
+
+#menu:checked + label::before {
+  transform: rotate(45deg) translate(0px);
+  -webkit-transform: rotate(45deg) translate(0px);
+}
+
+#menu:checked + label::after{
+  transform: rotate(-45deg) translate(0px);
+  -webkit-transform: rotate(-45deg) translate(0px);
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 208px;
+  font-weight: bold;
+  background: url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=656&q=80);
+  -webkit-background-clip: text;
+/*   -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #000; */
+	color: transparent;
+	animation: text 20s linear infinite;
+}
+
+@keyframes text {
+
+	0% { background-position: 0 0 }
+
+	100% { background-position: 100% 100% }
+
+}

@@ -1,0 +1,38 @@
+body{
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+span{
+  font-family: 'Lilita One', sans-serif;
+  font-size: 104px;
+  color: #DD0426;
+  text-shadow: 1px 1px 1px black;
+}
+
+span:after{
+ content: "";
+ position:relative;
+ animation: change 5s infinite;
+}
+
+@keyframes change{
+  0%{
+   content: "💻";
+  }
+  25%{
+   content: "🍻";
+  }
+  50%{
+   content: "🐱";
+  }
+  75%{
+   content: "☕"
+  }
+  100%{
+   content: "💻";
+  }
+}

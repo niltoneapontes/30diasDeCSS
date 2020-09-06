@@ -1,0 +1,86 @@
+:root{
+  --bg-color: #540D6E;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  height: 100vh;
+  padding-top: 240px;
+}
+
+.pend-newton{
+  height: 400px;
+  width: 400px;
+  display: flex;
+  border-top: 20px solid white;
+  border-radius: 20px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.pend-newton span{
+  border-radius: 2px;
+  width: 10px;
+  height: 300px;
+  background-color: white;
+  transform-origin: top;
+}
+
+.pend-newton span:before{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(-46.5px, 290px)
+}
+
+.pend-newton span:first-child{
+  animation: left 2s ease-in-out infinite;
+}
+
+.pend-newton span:last-child{
+  animation: right 2s ease-in-out infinite 1s;
+}
+
+@keyframes left{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(60deg);
+
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }  
+}
+
+@keyframes right{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-60deg);
+
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }  
+}

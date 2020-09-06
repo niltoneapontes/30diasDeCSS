@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+body {
+  background-color: #621C13;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Sacramento', cursive;
+  width: 100%;
+  height: 100vh;
+}
+
+div{
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px rgba(0,0,0,1);
+  animation: animate 1s ease-in-out forwards;
+}
+
+@keyframes animate{
+  0%{
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+div:nth-child(3){
+  width: 700px;
+  height: 700px;
+  animation-delay: 1.5s;
+  background-image: radial-gradient(#FFAF2D, #621C13 ,#621C13);
+}
+
+div:nth-child(4){
+  width: 550px;
+  height: 550px;
+  animation-delay: 2s;
+}
+
+
+div:nth-child(5){
+  width: 400px;
+  height: 400px;
+  animation-delay: 2.5s;
+}
+
+div:nth-child(6){
+  width: 300px;
+  height: 300px;
+  animation-delay: 3s;
+}
+
+div:nth-child(7) {
+  width: 250px;
+  height: 250px;
+  background: #1E181A;
+  animation-delay: 3s;
+}
+
+h1 {
+  font-size: 88px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: animateText 1s ease-in-out forwards;
+  animation-delay: 3.5s;
+  opacity: 0;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+}
+
+@keyframes animateText{
+  0%{
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(-10deg) scale(.3);
+  }
+  100%{
+        transform: translate(-50%, -50%) rotate(-10deg) scale(1);
+    width: 100%;
+    opacity: 1;
+  }
+}

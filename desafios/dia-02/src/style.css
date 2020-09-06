@@ -1,0 +1,41 @@
+body{
+  background-color: #fff;
+}
+.main{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: center;
+  margin: 30vh;
+}
+.circle{
+    animation: loading 1s linear infinite;
+}
+
+.outter{
+  margin: auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border-right: 0px solid teal;
+  border-left:2px solid teal;
+  border-top: 2px solid teal;
+}
+
+@keyframes loading{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text{
+  color: teal;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin: auto;
+  position: absolute;
+}
