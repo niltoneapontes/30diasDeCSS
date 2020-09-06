@@ -4,16 +4,16 @@ E aí, dev. 👨‍💻 Tudo bem por aí?
 
 Resolvi seguir o exemplo de https://github.com/MilenaCarecho/30diasDeCSS e fazer o desafio #30diasDeCSS. Os objetivos e regras do desafio estão logo abaixo e eu peguei lá do repositório de Milena mesmo.
 
-## Objetivo
+## Objetivo 🎯
 30 dias de CSS3 é um desafio que aceitei (e você também pode participar), e que visa melhorar minhas habilidades em HTML5 e CSS3 através da realização de projetos.
 Se você chegou agora e quer começar o desafio, fique a vontade, o desafio não tem data de inicio fixa, cada um faz os seus 30 dias.
 
-## Regras gerais
+## Regras gerais 📏
 * Realizar um projeto por dia
 * Compartilhar seu progresso nas mídias sociais (Twitter, Facebook, Linkedin etc.) usando a hashtag #30diasDeCSS
 * O projeto deve ser concluído até 23:59
 
-# Desafios
+# Desafios 🦾
 
 ## Dia 01 - Ícones em Camadas
 
